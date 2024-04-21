@@ -1,3 +1,4 @@
+<h3>
 <?php
 //constants - declared by using keyword 'const'.
 const data="apple";
@@ -7,11 +8,12 @@ echo data ,"<br>";
 //constants can also be declared using define()
 define("name","Deepak");      //define(variable_name, value)
 echo name,"<br/>";
-
+echo "<br/>";
 // const are always case-sensitive
 // define() has has a case-insensitive option.
 // const cannot be created inside another block scope, like inside a function or inside an if statement.
 // define can be created inside another block scope.
+
 
 /* 
 Data types:
@@ -27,6 +29,8 @@ Recourse - ftp_connect(""127.0.0.1") or die("localhost not found")
 $str="Mango";
 echo var_dump($str);  //The var_dump() function returns the data type and the value
 echo "<br/>";
+echo "<br/>";
+
 
 //Operators - Symbols that trigger some action to operands(constants or variables).
 //Arithmetic - +, -, *, /, **(Exponential yields power), %(Modulus yields remainder).
@@ -61,7 +65,36 @@ echo $b, "<br/>";    //21
 $name="Deepak";
 echo "Hello ".$name;  // .(dot) is a concatenation operator, we can also use comma here
 echo "<br/>";
+echo "<br/>";
 $lastname="Sahu";
 $fullname=$name." ".$lastname;  //here we cannot use comma as comma is not a concatenation operator, comma can only use in echo.
 echo $fullname;
+echo "<br/>";
+echo "<br/>";
+
+//Logical operators - used to compare multiple conditions in a single line.
+//And(&&), or(||), not(!), xor
+$a=10;
+$b=20;
+$c=30;
+if ($a<$b && $a<$c){         // in place of "&&", we can also use "and", both are correct.   
+    echo "$a is smaller";    //this block of code executes only if both the conditions are true.
+}
+
+echo "<br/>";
+echo "<br/>";
+
+if ($a<$b || $a>$c){       //in place of "||", we can use "or".
+    echo "$a is smaller than $b or $a is bigger than $c"; // this executes even if one condition is true.
+}
+echo "<br/>";
+echo "<br/>";
+
+//xor returns True only when not all conditions are true or false.
+// if all the conditions are true then xor returns false, means code inside if block will not execute.
+if ($a<$b xor $a<$c){
+    echo "$a is smaller than $b or $a is bigger than $c"; //since  both the conditions are true so it will not execute.
+}
+
 ?>
+</h3>
