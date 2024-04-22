@@ -117,6 +117,36 @@ for ($i = 0; $i < 10; $i++) {
     }
     echo "The number is: $i <br>";  //output: 0, 1, 2, 3, 5, 6, 7, 8, 9
   }
+echo "<br/> <br/>";
+
+// goto statement- similar to break statement but it goes to specific block of code after break.
+//we use goto to escape certain line of codes when certain condition is matched.
+$a=10;
+if ($a==10){
+    echo "Going to block-test  <br/>";  //since the condition is true, after this direct jump to test.
+    goto test;
+}
+
+//below codes will not execute till the test.
+echo 10*20;
+echo "Before Test <br/>";
+
+test:               // below this everycode will be executed.
+echo "Reached the test-block <br/>";   
+echo "<br/> <br/>";
+// goto in loop
+for($a=1; $a<10; $a++){
+    echo "$a <br/>";          //this line will execute till value 5 then jump to test2.
+    if ($a==5){
+        goto test2;
+    }
+}
+
+echo "before test2";      //will not execute
+
+test2:
+echo "Reached test2 <br/>";
+
 
 ?>
 </h2>
