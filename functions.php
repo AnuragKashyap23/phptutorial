@@ -36,7 +36,7 @@ function power($a, $b){
 echo power(2,5);
 echo "<br/>";
 // but why to write return, if above function can be achieved by using echo instead return inside function.
-// The reason is what if we want to echo some statement and function in same line, then there will be two echo, 
+// The reason is what if we want to echo some statement with function in same line, then there will be two echo, 
 // which will not work correctly. 
 
 function name(){
@@ -44,23 +44,40 @@ function name(){
 }
 echo "Hello ".name()." Welcome <br>"; 
 
-//we can also refer a function to a variable.
-function fname(){
-    echo "Gaurav";
+function test(){           
+    echo "Good morning <br>";
 }
-$fname="fname";
-$fname;
+
+$test="test";  //we can also give reference to function, but use same variable name as function name.
+test();
+echo "<br> <br>";
 
 
+// built-in functions
 
+//strlen()  - returns length of string including spaces
+$name="Gaurav Singh Sahu";
+echo strlen($name), "<br>";
 
+// date() - returns today date, give atleast one parameter enclodsed in quotes.
+echo date("m");
+echo "<br>";
+echo date("d.m.y");
+echo "<br> <br>";
 
+// is_string() - to check if given parameter is string or not. returns 1 if it is or nothing if it is not string.
+$a="Anime";
+echo is_string($a);
+echo "<br>";
 
+$a=123;
+echo is_string($a);
+echo "<br>";
 
-
-
-
-
+// rand() - generate random number.
+echo rand(10,50);
+echo "<br>";
+echo rand();
 
 
 ?>
