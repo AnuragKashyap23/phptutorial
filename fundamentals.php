@@ -1,9 +1,9 @@
 <?php
-echo "Hello "; // echo is used to display output. it is a language construct.
+echo "Hello "; // echo is used to display output. it is a language construct not function().
 Echo "Anurag <br/>" ;      // it is a case insensitive, echo, ECHO, Echo, ECho all are same.
-echo "Welcome"; echo "Anurag"; echo "Kashyap";  // multiple echo can be use in same line.
+echo "Welcome"; echo "Anurag"; echo "Kashyap";  // multiple echo can be used in the same line.
 // but output will be like: WelcomeAnuragKashyap
-// if we want a line break after welcome then we can use <br/>
+// if we want a line break after welcome then we can use <br/>.
 
 echo "<br/> Welcome <br/>"; echo "Anurag <br/>"; echo "Kashyap";  // multiple echo can be use in same line.
 
