@@ -34,9 +34,9 @@ echo "<br>";
 $name="Gaurav";
 
 function greet(){
-    $name="Deepak";     //local scope - meas if we echo $name out of greet() block then name = Gaurav will be display.
-                        //beacuse loca variable is only accessible inside the block.
-    echo $name;         // display Deepak because it is inside of block now.
+    $name="Deepak";     //local variable - means if we echo $name out of greet() block then name = Gaurav will be display.
+                        //beacuse local variable is only accessible inside the block.
+    echo $name;         //since it is iside function block so Deepak will be displayed.
 }
 greet();           
 echo "<br>";
@@ -47,12 +47,17 @@ echo "<br>";
 // if we want to access Gaurav inside function block then we need to use global keyword.
 
 function wish(){
-    global $name;
+    global $name;       // here, $name stores Gaurav.
     echo $name;
 }
 
 wish();
 echo "<br>";
+
+//include() and require() - both used for importing another php file in current file.
+// if we use include() and require() again and again then everytime file will be imported.
+// so we can use include_once() and require_once(), if the file is already imported then nothing happens.
+
 
 
 ?>

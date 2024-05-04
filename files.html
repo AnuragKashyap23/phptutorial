@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File upload</title>
+</head>
+<body>
+    <form name="fileup" action="files.php" method="POST" enctype="multipart/form-data">
+        <!--action attribute let's where to submit the form means all the form data will be taken to this location-->
+        <!--method attribute decide which http request method we use-->
+        <!--enctype is necessary while uploading files-->
+
+        <input name="file_name" type="file">
+        <br/>
+        <br/>
+        <button type="submit"> Upload </button>
+    </form>
+    
+</body>
+</html>
