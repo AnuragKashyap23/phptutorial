@@ -1,6 +1,6 @@
 <?php
 echo "Hello "; // echo is used to display output. it is a language construct not function().
-               // Language constructs are things that the PHP parser already knows about. Some language 
+               // Language constructs are keywords that the PHP parser already knows about. Some language 
                // constructs act like functions, while others are used to build control statements such as 
                // if and while .
 
