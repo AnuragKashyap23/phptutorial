@@ -1,5 +1,9 @@
 <?php
 echo "Hello "; // echo is used to display output. it is a language construct not function().
+               // Language constructs are things that the PHP parser already knows about. Some language 
+               // constructs act like functions, while others are used to build control statements such as 
+               // if and while .
+
 Echo "Anurag <br/>" ;      // it is a case insensitive, echo, ECHO, Echo, ECho all are same.
 echo "Welcome"; echo "Anurag"; echo "Kashyap";  // multiple echo can be used in the same line.
 // but output will be like: WelcomeAnuragKashyap
@@ -8,7 +12,7 @@ echo "Welcome"; echo "Anurag"; echo "Kashyap";  // multiple echo can be used in 
 echo "<br/> Welcome <br/>"; echo "Anurag <br/>"; echo "Kashyap";  // multiple echo can be use in same line.
 
 /*
-Variables: Reference to a memor location.
+Variables: Reference to a memory location.
 Rules-
 Always start with $ sign followed by underscore and letters but not digits.
 It is comprised of alphanumeric data and underscore but no other special characters.
